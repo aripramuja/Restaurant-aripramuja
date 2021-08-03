@@ -23,7 +23,7 @@ nav {
   right: 0;
   left: 0;
   top: 0;
-  z-index: 1030;
+  z-index: 99;
 }
 .navbar-brand {
   display: inline-block;
@@ -33,7 +33,10 @@ nav {
   font-size: 1.125rem;
   line-height: inherit;
   white-space: nowrap;
+  min-width: 44px;
+  min-height: 44px;
 }
+
 nav > ul {
   display: flex;
   width: 40%;
@@ -47,6 +50,8 @@ nav > ul {
 nav > ul > li {
   display: list-item;
   text-align: -webkit-match-parent;
+  min-width: 44px;
+  min-height: 44px;
 }
 i {
   margin-right: 10px;
@@ -56,6 +61,8 @@ nav a {
   font-weight: 400;
   text-decoration: none;
   color: white;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 nav a:hover {
@@ -69,6 +76,8 @@ nav a:hover {
   font-size: 20px;
   cursor: pointer;
   display: none;
+  min-height: 44px;
+  min-width: 44px;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -90,11 +99,15 @@ nav a:hover {
 .hero-text {
   color: #fff;
   text-align: center;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .hero-text > p {
   font-size: 1.6em;
   margin-bottom: 15px;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .hero-text > h1 {
@@ -102,6 +115,8 @@ nav a:hover {
   font-weight: bolder;
   font-size: 3.4em;
   margin-bottom: 10px;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .hero-text > a {
@@ -138,6 +153,12 @@ main {
 .main-header {
   text-align: center;
   color: #c70039;
+  min-height: 44px;
+  min-width: 44px;
+}
+.main-header > h1 {
+  min-height: 44px;
+  min-width: 44px;
 }
 restaurant-list {
   display: grid;
@@ -164,13 +185,16 @@ img.restaurant-img {
 }
 
 .skip-link {
+  min-width: 44px;
+  min-height: 44px;
   position: absolute;
-  top: -40px;
+  top: -48px;
   left: 0;
   background-color: #bf1722;
   color: white;
   padding: 8px;
   z-index: 100;
+  text-decoration: none;
 }
 
 .skip-link:focus {
