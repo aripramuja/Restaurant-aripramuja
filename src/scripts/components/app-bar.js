@@ -14,19 +14,17 @@ class appBar extends HTMLElement {
 
                     </style>
                     <nav>
-                      <div class="navbar-brand">
-                        <a href=""><img src="${pramuja}" alt="brand" /></a>
-                      </div>
-                      <button class="navbar-toggler" id="navbar-toggler"><i class="fas fa-bars"></i><small>MENU</small></button>
+                      <img src="${pramuja}" class="brand" alt="brand" />
+                      <button class="navbar-toggler" id="navbar-toggler"><i class="fas fa-bars"></i></button>
                       <ul class="navbar-collapse" id="navbarResponsive">
                         <li>
-                          <a href="#home"><i class="fas fa-home"></i>Home</a>
+                          <a href="#home">Home</a>
                         </li>
                         <li>
-                        <a href="#"><i class="fas fa-registered"></i>Favorite</a>
+                        <a href="#">Favorite</a>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com/in/ari-pramuja/"><i class="fas fa-address-card"></i>About Us</a>
+                          <a href="https://www.linkedin.com/in/ari-pramuja/">About Us</a>
                         </li>
                       </ul>
                     </nav>`;

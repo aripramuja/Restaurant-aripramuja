@@ -13,62 +13,42 @@ nav {
   display: flex;
   flex-wrap: wrap;
   background-color: #111d5e;
-  justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
-  border-bottom: 2px solid #dee2e6;
-  border-bottom-color: transparent;
-  transition: all 0.2s ease-in-out;
+  padding: 1rem 10%;
   position: relative;
-  right: 0;
-  left: 0;
-  top: 0;
+  justify-content: flex-end;
   z-index: 99;
 }
-.navbar-brand {
+.brand {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
   display: inline-block;
-  padding-top: 0.28625rem;
-  padding-bottom: 0.28625rem;
-  margin-right: 1rem;
-  font-size: 1.125rem;
-  line-height: inherit;
-  white-space: nowrap;
-  min-width: 44px;
+  padding: 0px 20px;
   min-height: 44px;
+  min-width: 44px;
+}
+ul li a {
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
 }
 
-nav > ul {
-  display: flex;
-  width: 40%;
-  list-style-type: none;
-  justify-content: space-between;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+ul li a:hover {
+  color: #bf1722;
 }
-nav > ul > li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-  min-width: 44px;
-  min-height: 44px;
-}
-i {
-  margin-right: 10px;
-}
-nav a {
-  font-size: 1rem;
-  font-weight: 400;
-  text-decoration: none;
+
+li,
+a {
+  font-weight: 500;
+  font-size: 16px;
   color: white;
-  min-height: 44px;
-  min-width: 44px;
+  text-decoration: none;
 }
-
-nav a:hover {
-  font-weight: bold;
-}
-
 .navbar-toggler {
   background-color: transparent;
   border: 0;
@@ -208,9 +188,6 @@ img.restaurant-img {
   font-weight: bold;
 }
 @media screen and (max-width: 1000px) {
-  .navbar-toggler {
-    display: flex;
-  }
   nav > ul {
     display: none;
     width: 100%;
@@ -218,6 +195,15 @@ img.restaurant-img {
   }
   nav > ul.show {
     display: flex;
+  }
+  nav ul li {
+    padding: 0%;
+  }
+  li a {
+    font-size: 34px;
+  }
+  .navbar-toggler {
+    display: block;
   }
 }
 
