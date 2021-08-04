@@ -35,7 +35,7 @@ ul li {
 }
 ul li a {
   transition: all 0.3s ease 0s;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 ul li a:hover {
@@ -199,9 +199,7 @@ img.restaurant-img {
   nav ul li {
     padding: 0%;
   }
-  li a {
-    font-size: 34px;
-  }
+
   .navbar-toggler {
     display: block;
   }
