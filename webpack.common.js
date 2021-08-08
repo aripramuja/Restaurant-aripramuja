@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
+const { InjectManifest } = require("workbox-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "src/scripts/index.js"),
@@ -42,6 +43,10 @@ module.exports = {
           to: path.resolve(__dirname, "dist/"),
         },
       ],
+    }),
+    new InjectManifest({
+      swSrc: path.resolve(__dirname, "src/scripts/utils/sw.js"),
+      swDest: "sw.js",
     }),
   ],
 };
