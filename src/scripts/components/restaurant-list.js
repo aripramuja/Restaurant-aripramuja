@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-underscore-dangle */
 import "./restaurant-item";
 
 class restaurantList extends HTMLElement {
@@ -7,7 +9,7 @@ class restaurantList extends HTMLElement {
   }
 
   render() {
-    for (let restaurant of this._restaurantDataList) {
+    for (const restaurant of this._restaurantDataList) {
       const restaurantItemElement = document.createElement("restaurant-item");
       restaurantItemElement.restaurantDataItem = restaurant;
       this.appendChild(restaurantItemElement);

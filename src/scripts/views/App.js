@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import "../components/app-navbar";
 import "../components/hero-Element";
 import "../components/app-footer";

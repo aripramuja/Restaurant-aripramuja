@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 class restaurantItem extends HTMLElement {
   set restaurantDataItem(restaurantDataItem) {
     this._restaurantDataItem = restaurantDataItem;

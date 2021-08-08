@@ -1,22 +1,23 @@
+/* eslint-disable no-underscore-dangle */
 const DrawerInitiator = {
   init({ button, drawer, content }) {
-    button.addEventListener('click', (event) => {
+    button.addEventListener("click", (event) => {
       this._toggleDrawer(event, drawer);
     });
 
-    content.addEventListener('click', (event) => {
+    content.addEventListener("click", (event) => {
       this._closeDrawer(event, drawer);
     });
   },
 
   _toggleDrawer(event, drawer) {
     event.stopPropagation();
-    drawer.classList.toggle('nav-list-block');
+    drawer.classList.toggle("nav-list-block");
   },
 
   _closeDrawer(event, drawer) {
     event.stopPropagation();
-    drawer.classList.remove('nav-list-block');
+    drawer.classList.remove("nav-list-block");
   },
 };
 

@@ -14,14 +14,14 @@
     "eqeqeq": "off",
     "curly": "error",
     "quotes": ["error", "double"],
-    "overrides": [
-      {
-        "files": ["*-test.js", "*.spec.js"],
-        "rules": {
-          "no-unused-expressions": "off"
-        }
+    "noInlineConfig": 0
+  },
+  "overrides": [
+    {
+      "files": ["*-test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
       }
-    ],
-    "noInlineConfig": true
-  }
+    }
+  ]
 }
