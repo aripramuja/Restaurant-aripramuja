@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import "../components/app-navbar";
-import "../components/hero-Element";
+import "../components/hero-element";
 import "../components/app-footer";
 import DrawerInitiator from "../utils/drawer-initiator";
 import UrlParser from "../routes/url-parser";
