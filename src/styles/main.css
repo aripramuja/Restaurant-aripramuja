@@ -57,7 +57,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../../dist/image/hero-image_2-1200.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../public/images/hero/hero-image_2-1000.jpg");
   background-position: center;
   object-fit: cover;
   padding: 0 10%;
@@ -361,7 +361,7 @@ main {
   }
   .hero {
     min-height: 500px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../../dist/image/hero-image_2-600.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../public/images/hero/hero-image_2-600.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -385,7 +385,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .hero {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../../dist/image/hero-image_2-1200.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.651), rgba(3, 3, 3, 0.856)), url("../public/images/hero/hero-image_2-1200.jpg");
     background-position: center;
   }
 }
