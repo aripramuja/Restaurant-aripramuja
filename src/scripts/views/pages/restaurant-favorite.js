@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import favoriteRestaurantIdb from "../../data/restaurant-idb";
 import restaurantList from "../templates/restaurant-list";
 
@@ -18,9 +19,7 @@ const Favorite = {
 
     const favoriteRestaurantData = document.querySelector("#favorite-restaurant");
     if (data.length === 0) {
-      favoriteRestaurantData.innerHTML = `
-      <h1 class="restaurant-header">Anda Belum Memasukan Restaurant Favorite</h1>
-      `;
+      favoriteRestaurantData.innerHTML = `Empty favorite Restaurant`;
     }
 
     data.forEach((restaurant) => {

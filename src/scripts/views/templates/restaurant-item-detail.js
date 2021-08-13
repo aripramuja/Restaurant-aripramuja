@@ -4,13 +4,13 @@ import CONFIG from "../../globals/config";
 
 const restaurantDetail = (restaurant) => `
   <div class="detail card">
-    <img alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+    <img alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL_SM + restaurant.pictureId}"/>
 
     <div class="restaurant-information">
-      <div class="like" id="likeButtonContainer">Favorite</div>
+      <div class="like" id="likeButtonContainer"></div>
       <small> Rating ${restaurant.rating}</small>
       <strong> ${restaurant.address}, ${restaurant.city} </strong>
-      <h2 >${restaurant.name}</h2>
+      <h2 class="detail-name">${restaurant.name}</h2>
       <article class="restaurant-description">${restaurant.description}</article>
       <h4> Kategori : ${restaurant.categories
         .map(
